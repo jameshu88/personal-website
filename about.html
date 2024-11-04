@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+
+    <div class="mobile-navigation">
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li class="mobile-menu-item"><a href="about.html">About</a></li>
+                <li class="mobile-menu-item"><a href="index.html#portfolio">Portfolio</a></li>
+                <li class="mobile-menu-item"><a href="https://github.com/jameshu88/">GitHub</a></li>
+                <li class="mobile-menu-item"><a href="index.html#contact">Say hi! 👋</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<!-------------Navigation Bar Starts----------->
+<nav id="navbar" class="header-container" >
+    <div class="menu-wraper">
+        <a href="index.html">
+            <div class="header-left">
+                <h1 class="logo-text">James Huang</h1>
+                <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+            </div>
+        </a>
+
+        <div class="header-right">
+            <div class="menu-container">
+                <ul class="menu-items">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/jameshu88/">GitHub</a></li>
+                    <li><a href="index.html#contact">Say hi! 👋</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-------------Navigation Bar Ends----------->
+
+
+
+<!-------About Section Starts----------------->
+
+<div class="about-container">
+    <div class="about-wraper">
+        <div class="about-header">
+            <h1 class="about">About Me</h1>
+        </div>
+        <div class="left-about">
+            <div class="text-content-about">
+                <h1 class="background">Background</h1>
+                <p class="about-description">Where artistic enthusiasm meets tech—always learning, always creating.</p>
+            </div>
+            <div class="about-paragraph">
+                <p class="paragraph-about">Hi, I’m James Huang, an engineer, musician, and cybersecurity enthusiast passionate about solving real-world problems with a creative edge. I bring a unique perspective, blending technical expertise in <strong>cybersecurity</strong> and <strong>AI development</strong> with my background as a <strong>musician and designer</strong>.<br><br>
+
+                    I’ve had the privilege of conducting research at the <strong>Computational Memory Lab @ UPenn</strong>, where I worked on developing tools to analyze and annotate cognitive data for experiments aimed at advancing our understanding of memory and learning. Part of my work here involves programming video games in <strong>C# with Unity</strong> to test what we call the <em>endogenous encoding of memories in non-invasive closed-loop environments</em> (a bit of a mouthful, I know). Essentially, I build immersive 3D VR games that memory patients can play, while we monitor their <strong>EEG signals to the millisecond</strong> to predict moments when their memory is primed for learning, then deliver game objectives at optimal times.<br><br>
+            
+                    Additionally, I work with <strong>WhisperX</strong> for automated annotation of lab data, where I help refine audio processing tools to improve the accuracy and efficiency of data labeling in our cognitive science experiments.<br><br>
+            
+                    Recently, I joined the <strong>Machine Learning Club @ UPenn</strong>, where I’m exploring <strong>federated learning</strong> and <strong>differential privacy</strong> to develop privacy-preserving machine learning systems that prioritize user security and data integrity.<br><br>
+                    
+                    My strengths lie in my ability to adapt and innovate. Whether leading initiatives to build AI-driven products, <strong>conducting ethical penetration tests</strong>, or <strong>creating music</strong>, I dive deep into each project with curiosity and dedication.<br><br>
+                    
+                    Outside of my research, I lead a band in the city and serve as <strong>Vice President and coach of UPenn's Boxing Club</strong>, where I help students build resilience and technique. I also run a music account on Instagram with over <strong>10,000 followers</strong> and regularly publish music on Spotify and Apple Music as part of the <strong>Penn Songwriters Collective</strong>. In my free time, you’ll find me crafting songs, practicing languages (currently Russian and French), and exploring the intersections of <strong>AI, music, and cybersecurity</strong>.
+            </div>
+        </div>
+        <div class="author-image">
+            <img src="Images/view.jpg" alt="" class="author">
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+
+
+<!-------------Cards Scroll Starts-------->
+<script>
+    // JavaScript to increase scroll speed on the right card
+    const fastScrollCard = document.getElementById('fastScrollCard');
+  
+    fastScrollCard.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      fastScrollCard.scrollTop += event.deltaY * 1.5; // Increase multiplier to scroll faster
+    });
+  </script>
+<!-------------Cards Scroll Ends-------->
+
+
+<script>
+    function toggleMenu() {
+const navLinks = document.querySelector('.nav-links');
+navLinks.classList.toggle('active');
+}
+</script>
+
+
+<!-------Mobile Navigation----->
+    <script>
+        let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+
+    if (window.scrollY > lastScrollY) {
+        navbar.classList.add('hidden'); // Hide navbar on scroll down
+    } else {
+        navbar.classList.remove('hidden'); // Show navbar on scroll up
+    }
+
+    lastScrollY = window.scrollY;
+    });
+    </script>
+<!-------Mobile Navigation----->
+
+
+</body>
+</html>

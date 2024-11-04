@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap" rel="stylesheet">
+    <title>Automated Annotation Framework - Human Memory Lab</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="header-container">
+        <div class="menu-wraper">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="https://github.com/jameshu88" target="_blank">GitHub</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <div class="work-container">
+        <div class="work-section">
+            <div class="work-heading">
+                <h1 class="work-title">Automated Annotation Framework for Continuous Data</h1>
+            </div>
+            <div class="work-description-container">
+                <div class="case-study-date">
+                    <p class="case-study">Research Project</p>
+                    <p class="case-study-date">Ongoing · Human Memory Lab @ UPenn </p>
+                </div>
+                <p class="work-description">This project aims to develop a generalized automated annotation framework for continuous data, focusing on applications across EEG, speech data, and other time-series signals. The framework leverages advanced machine learning models to enhance annotation efficiency and precision.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Content Section -->
+    <div class="work-content-container">
+        <div class="content-wraper">
+            <h2 class="h2-heading">Project Overview</h2>
+            <p class="work-paragraph">Automated annotation of continuous data is essential for fields that handle large-scale datasets, such as neuroscience and speech analysis. This project is designed to create a flexible, domain-agnostic framework that can be applied to various types of continuous data, automating the detection and annotation of key events with high accuracy.</p>
+            
+            <h2 class="h2-heading">Technologies and Methods</h2>
+            <p class="work-paragraph">Under the mentorship of my PI Dr. Michael J. Kahana and postdocs in the lab, I am leveraging state-of-the-art AI methods to tackle the specific challenges of event detection in continuous data streams:</p>
+            
+            <p class="work-paragraph">
+                <strong>WhisperX for Speech Transcription and Onset Detection</strong>: Utilizing OpenAI’s Whisper model, WhisperX provides robust transcription and onset detection. While accurate in many settings, the model faces challenges with millisecond-level timing precision, which I am working to enhance in this framework.
+            </p>
+
+            <p class="work-paragraph">
+                <strong>EEG Event Detection Using Adaptive Thresholding</strong>: Building on methods like EEG-Annotate, I am detecting and labeling events in EEG data, especially for non-time-locked neural responses. Adaptive thresholding techniques are applied to improve accuracy in complex, real-world environments.
+            </p>
+            
+            <p class="work-paragraph">
+                <strong>Domain Adaptation Techniques</strong>: By employing domain adaptation, I am working to ensure that the framework generalizes effectively across different data types, allowing reliable performance in applications ranging from speech to neural data. This adaptability is crucial for scaling automated annotation to multiple research areas.
+            </p>
+
+            <p class="work-paragraph">
+                <strong>Improving Onset Precision</strong>: A key focus of my work is enhancing onset detection precision for applications requiring fine-grained temporal accuracy, such as continuous EEG data and noisy audio environments. I am building on WhisperX’s capabilities, aiming to achieve sub-millisecond accuracy.
+            </p>
+            
+            <h2 class="h2-heading">Research Objectives</h2>
+            <p class="work-paragraph">The primary goals of this project are:</p>
+            <ul>
+                <li class="bullet-points">To develop a robust, domain-agnostic framework for event detection and annotation across EEG and speech data.</li>
+                <li class="bullet-points">To improve the millisecond-level onset detection accuracy, addressing limitations in current tools like WhisperX.</li>
+                <li class="bullet-points">To implement adaptive methods that enhance generalizability across various types of continuous data.</li>
+            </ul>
+
+            <h2 class="h2-heading">Future Directions</h2>
+            <p class="work-paragraph">Under the mentorship of my PI and postdoctoral collaborators, I am working on a primary authorship publication that will detail the AI methodologies and innovations behind this framework. The paper will describe my approach to enhancing WhisperX for greater temporal precision, the application of adaptive thresholding for EEG signals, and the successes achieved in generalizing the framework across diverse data types. This research is expected to make significant contributions to fields reliant on automated annotation, such as neuroscience and computational linguistics.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navigation and Scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>

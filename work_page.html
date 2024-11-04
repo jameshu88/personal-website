@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <title>Work Page - Penn Phonetics Laboratory</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="header-container">
+        <div class="menu-wraper">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="index.html#contact">Say hi! 👋</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Page Hero Section -->
+    <div class="work-container">
+        <div class="work-section">
+            <div class="work-heading">
+                <h1 class="work-title">a1100K - Exploring RF Vulnerabilities in Everyday Devices</h1>
+            </div>
+            <div class="work-description-container">
+                <div class="case-study-date">
+                    <p class="case-study">Research Project</p>
+                    <p class="case-study-date">Published on Nov 1, 2023 · 5min read</p>
+                </div>
+                <p class="work-description">a1100K is my ongoing exploration into the vulnerabilities of the radio frequency devices I use daily, aiming to raise awareness about common security risks in everyday tools.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Content Section -->
+    <div class="work-content-container">
+        <div class="content-wraper">
+            <h2 class="h2-heading">Background</h2>
+            <p class="work-paragraph">As a part of Penn Phonetics Laboratory’s research team, I designed and developed three online musicolinguistic games using JavaScript, MongoDB, and HTML. These games were created to investigate the impact of foreign language acquisition on rhythm and pitch perception. Over 200 participants provided data, which was analyzed using tools such as Praat and Librosa to derive meaningful insights.</p>
+            
+            <h3 class="h3-heading">Technologies Used</h3>
+            <ul>
+                <li class="bullet-points">JavaScript, MongoDB, HTML for game development</li>
+                <li class="bullet-points">Python’s Librosa and TensorFlow libraries for acoustic analysis and deep learning integration</li>
+                <li class="bullet-points">Praat for phonetic analysis</li>
+            </ul>
+
+            <h3 class="h3-heading">Challenges & Achievements</h3>
+            <p class="work-paragraph">A key challenge was developing deep learning models to classify voices and instruments by timbre similarity. I integrated convolutional neural networks (CNNs) with Librosa for a novel experimental paradigm, conducting detailed phoneme and Fourier analysis. This approach allowed us to classify and understand subtle audio features with a high degree of precision.</p>
+            
+            <h3 class="h3-heading">Results & Impact</h3>
+            <p class="work-paragraph">The success of this project earned recognition from the Center for Undergraduate Research and Fellowships (CURF), where I was highlighted as an exemplar undergraduate researcher in 2023. Our findings contribute to a deeper understanding of how foreign language learning influences auditory processing, with potential applications in both linguistics and music education.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navigation and Scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>

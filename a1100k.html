@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <title>Work Page - a1100K Project</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="header-container">
+        <div class="menu-wraper">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="https://github.com/jameshu88/" target="_blank">GitHub</a></li>
+                        <li><a href="index.html#contact">Say hi! 👋</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Page Hero Section -->
+    <div class="work-container">
+        <div class="work-section">
+            <div class="work-heading">
+                <h1 class="work-title">a1100K - Exploring RF Vulnerabilities in Everyday Devices</h1>
+            </div>
+            <div class="work-description-container">
+                <div class="case-study-date">
+                    <p class="case-study">Project</p>
+                    <p class="case-study-date">Published on Nov 4, 2024 · 7min read</p>
+                </div>
+                <p class="work-description">a1100K is my ongoing exploration into the vulnerabilities of the radio frequency devices I use daily, aiming to raise awareness about common security risks in everyday tools.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Content Section -->
+    <div class="work-content-container">
+        <div class="content-wraper">
+            <h2 class="h2-heading">Background</h2>
+            <p class="work-paragraph">In an age where convenience is king, I often wonder about the security of everyday wireless devices—until something goes wrong. This curiosity led me to create a1100K, a GitHub repository dedicated to exploring vulnerabilities in commercial garage door openers and other common devices. As a security enthusiast, I wanted to uncover how even simple devices can be exploited when not properly secured.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <img src="https://github.com/user-attachments/assets/0a1f9c9a-fe34-4888-9cdb-90da8fe19666" alt="Frequey" style="width:50%; height:auto;">
+                <p style="font-style: italic; font-size: 14px;">
+                    Frequey, the official mascot of a1100k
+                    <br>
+                </p>
+            </div>     
+            
+            <h3 class="h3-heading">About a1100K</h3>
+            <p class="work-paragraph">a1100K—named after the OOK (On-Off Keying) modulation used in many low-frequency communication protocols—serves as my centralized hub for radio frequency hacks. One of its standout tools is the De-Bruijn-powered RF hacker, designed to analyze and brute-force frequencies in devices like garage door openers. This tool demonstrates how straightforward it is to reverse-engineer signals and identify security gaps in the devices I casually rely on.</p>
+
+            <div class="image-placeholder">
+                <img src="placeholder.jpg" alt="RF analyzer tool example" style="width:100%;height:auto;">
+                <p class="image-caption">RF analyzer in action, capturing and testing various frequencies.</p>
+            </div>
+
+            <h3 class="h3-heading">The Math Behind the De-Bruijn Sequence</h3>
+            <p class="work-paragraph">A De-Bruijn sequence is a cyclic sequence where every possible combination of a given length occurs exactly once. This is crucial in brute-forcing radio frequencies because it allows me to systematically test every possible signal combination without repeating patterns. For example, instead of sending every signal variation one by one, a De-Bruijn sequence optimizes the process by embedding all combinations into a single continuous signal. This is computationally efficient, especially for devices like garage doors that don’t use encrypted or dynamic codes.</p>
+
+            <div style="text-align: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/De_Bruijn_sequence.svg/1280px-De_Bruijn_sequence.svg.png" alt="De Bruijn Sequence Visualization" style="width:50%; height:auto;">
+                <p style="font-style: italic; font-size: 14px;">
+                    A De Bruijn sequence efficiently encodes every possible subsequence of a given length within a continuous string, making it an ideal tool for exhaustive signal testing, such as brute-forcing RF codes with computational efficiency.
+                    <br>
+                    <span style="font-size: 12px;">Image source: Wikipedia's page on De Bruijn sequences.</span>
+                </p>
+            </div>            
+
+            <h3 class="h3-heading">Current Highlight: De-Bruijn Tool for Arduino & Flipper Zero</h3>
+            <p class="work-paragraph">My latest tool leverages the De-Bruijn sequence to capture and test frequency combinations quickly, turning devices like Arduino and Flipper Zero into powerful, compact frequency capturers. With just a few lines of code, users can brute-force through potential frequencies and assess how easily certain wireless signals can be compromised.</p>
+            
+            <div class="image-placeholder">
+                <img src="placeholder.jpg" alt="Arduino and Flipper Zero setup" style="width:100%;height:auto;">
+                <p class="image-caption">Arduino and Flipper Zero used as frequency capture devices.</p>
+            </div>
+
+            <h3 class="h3-heading">Educational Use Only</h3>
+            <p class="work-paragraph">While a1100K is an educational project, it's also a reminder that the freedom to hack comes with responsibility. This repository serves as a tool to understand vulnerabilities, but all users must ensure compliance with local laws and use this knowledge ethically. So remember: hack wisely, test on your own stuff, and use these insights to advocate for better security in my connected world.</p>
+
+            <h3 class="h3-heading">Get Involved</h3>
+            <p class="work-paragraph">Interested in exploring RF security with a1100K? Check out the repository on <a href="https://github.com/jameshu88/a1100K" target="_blank" style="font-weight: bold; color: blue; text-decoration: underline;">GitHub</a>, tinker with the tools, and join the conversation on raising awareness about the vulnerabilities in the devices I use every day. Together, I aim to push for a future where security isn’t just an afterthought.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navigation and Scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>

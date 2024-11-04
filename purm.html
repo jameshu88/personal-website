@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Work Page - Penn Phonetics Laboratory</title>
+    <style>
+        .spotlight-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .spotlight-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            margin-bottom: 20px; /* Add space below the paragraph */
+        }
+        .instagram-media {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="header-container">
+        <div class="menu-wraper">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="https://github.com/jameshu88" target="_blank">Github</a></li>
+                        <li><a href="index.html#contact">Say hi! 👋</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Page Hero Section -->
+    <div class="work-container">
+        <div class="work-section">
+            <div class="work-heading">
+                <h1 class="work-title">Penn PURM Linguistics Research Projects</h1>
+            </div>
+            <div class="work-description-container">
+                <div class="case-study-date">
+                    <p class="case-study">Research Project</p>
+                    <p class="case-study-date">Published on Jan 21, 2024 · 8min read</p>
+                </div>
+                <p class="work-description">In the summer of 2023, I developed three online musicolinguistic games using JavaScript, MongoDB, and HTML for the University of Pennsylvania's Phonetics Laboratory. The research aimed to explore how language acquisition influences rhythm and pitch perception, collecting data from over 200 runs of the software. Findings were presented at the Annual CURF Research Exposition at the University of Pennsylvania, Philadelphia, PA.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Content Section -->
+    <div class="work-content-container">
+        <div class="content-wraper">
+            <h2 class="h2-heading">Overview</h2>
+            <p class="work-paragraph">The original websites for these experiments have been sunsetted after the completion of the studies. However, for those interested, the archived code of each project remains available on my <a href="https://github.com/jameshu88/PURM-Summer-Research-2023" target="_blank" style="font-weight: bold; color: blue; text-decoration: underline;">GitHub</a>. You can explore how each game was designed to capture data and investigate correlations between language learning, rhythm, and pitch perception.</p>
+
+            <h2 class="h2-heading">Penn PURM Taiko</h2>
+            <p class="work-paragraph">Penn PURM Taiko is a JavaScript-based rhythm game inspired by *Taiko no Tatsujin*. It measures users' rhythmic perception to correlate with their levels of linguistic and musical training. Data collected through this game is stored in a MySQL database.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/db2cc4c6-6c73-49f0-bfb4-08e8b7378e05" alt="Penn PURM Taiko Game Screenshot" style="width:80%; height:auto;">
+                <p style="font-style: italic; font-size: 14px;">Screenshot of Penn PURM Taiko, measuring rhythmic perception.</p>
+            </div>
+
+            <h2 class="h2-heading">Penn PURM Timbre</h2>
+            <p class="work-paragraph">Penn PURM Timbre is another JavaScript game that measures players' abilities to differentiate between instrument timbres. This interactive experience helps compare players' capabilities in distinguishing vocal and instrumental sounds, contributing to an understanding of auditory discrimination.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/e8bdd6c2-7d2b-4369-b040-dc568097be21" alt="Penn PURM Timbre Game Screenshot" style="width:80%; height:auto;">
+                <p style="font-style: italic; font-size: 14px;">Screenshot of Penn PURM Timbre, assessing instrument timbre differentiation.</p>
+            </div>
+
+            <h2 class="h2-heading">Penn PURM VocalSense</h2>
+            <p class="work-paragraph">Penn PURM VocalSense, developed with Next.js, tests players' abilities to distinguish between the intonations of two speakers. The game involves identifying which “elephant” speaks in a higher tone, adding a playful element to the study of intonation recognition and its ties to language learning.</p>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/0f64b2b7-ee0c-4df1-878e-d8a1cdec5e6f" alt="Penn PURM VocalSense Game Screenshot" style="width:80%; height:auto;">
+                <p style="font-style: italic; font-size: 14px;">Screenshot of Penn PURM VocalSense, testing intonation recognition between speakers.</p>
+            </div>
+
+            <h2 class="h2-heading">Technologies and Methods</h2>
+            <p class="work-paragraph">In this research, I used Convolutional Neural Networks (CNNs) alongside Librosa, a powerful audio analysis library, to classify instruments and voices based on their timbral qualities. Here’s how they worked together:</p>
+            
+            <p class="work-paragraph">
+                <strong>Librosa for Feature Extraction</strong>: Librosa was used to extract key audio features like mel-frequency cepstral coefficients (MFCCs), spectral centroid, and zero-crossing rate. These features capture characteristics of the audio signal, allowing us to measure elements that relate closely to timbre, such as brightness, harmonic structure, and roughness.
+            </p>
+            
+            <p class="work-paragraph">
+                <strong>CNNs for Classification</strong>: Convolutional Neural Networks are ideal for pattern recognition in image-like data. By converting audio samples into spectrograms, the CNN could “see” the sound and identify patterns associated with unique timbral qualities. The CNN learned to distinguish instruments and voices based on these timbral characteristics, which allowed for qualitative similarity classification even across different pitches and volumes.
+            </p>
+
+            <p class="work-paragraph">
+                <strong>Combining Librosa and CNNs</strong>: By using features extracted from Librosa, the CNN could learn subtle distinctions between sounds with similar timbres but different harmonic textures or resonant frequencies. This allowed the system to classify and group sounds by timbral qualities alone, providing powerful insights into auditory discrimination.
+            </p>
+        </div>
+    </div>
+
+    <!-- Project Overview Video Section (at the end) -->
+    <div class="spotlight-container">
+        <h2 class="h2-heading">Spotlight: Project Overview Video</h2>
+        <div class="spotlight-content">
+            <p class="work-paragraph" style="margin-bottom: 20px;">
+                My work was highlighted by Penn’s Center for Undergraduate Research and Fellowships (CURF) because it showcases an innovative approach to understanding how language acquisition influences auditory processing, particularly rhythm and pitch perception. Through a series of interactive musicolinguistic games, I developed tools that collect and analyze data on participants’ auditory responses in a fun, engaging way. This research contributes to a deeper understanding of phonetic cognition and may offer valuable insights into language and music education. The project’s impact and interdisciplinary nature earned it recognition at the Annual CURF Research Exposition.
+            </p>
+        </div>
+        
+        <!-- Instagram Video Embed Code -->
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C4f6x-Pi2KZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <div style="padding:16px;">
+                <a href="https://www.instagram.com/reel/C4f6x-Pi2KZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style="display: flex; flex-direction: row; align-items: center;">
+                        <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                            <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                            <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                        </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                        <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                    <g><path d="M556.869..."></path></g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div style="padding-top: 8px;">
+                        <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                    </div>
+                </a>
+            </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+
+    <!-- JavaScript for Navigation and Scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>

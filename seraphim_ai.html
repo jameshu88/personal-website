@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap" rel="stylesheet">
+    <title>Work Page - Seraphim AI</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="header-container">
+        <div class="menu-wraper">
+            <a href="index.html">
+                <div class="header-left">
+                    <h1 class="logo-text">James Huang</h1>
+                    <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="https://github.com/jameshu88" target="_blank">GitHub</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Page Hero Section -->
+    <div class="work-container">
+        <div class="work-section">
+            <div class="work-heading">
+                <h1 class="work-title">Seraphim AI - The Future of Chord Recognition</h1>
+            </div>
+            <div class="work-description-container">
+                <div class="case-study-date">
+                    <p class="case-study">Music Technology Project/Startup</p>
+                    <p class="case-study-date">Published on Nov 4, 2024 · 5min read</p>
+                </div>
+                <p class="work-description">Seraphim AI is an innovative chord-recognition app designed to help musicians identify chords, chord progressions, and explore alternative voicings with AI-assisted suggestions. Our goal is to make music composition more accessible, allowing artists to transform their creative ideas into complex harmonies with ease.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Content Section -->
+    <div class="work-content-container">
+        <div class="content-wraper">
+            <h2 class="h2-heading">Project Overview</h2>
+            <p class="work-paragraph">Seraphim AI is an iOS application that leverages deep learning and conditional random fields to identify chords and chord progressions from live audio or uploaded recordings. This app caters to novice musicians and seasoned artists alike, providing a seamless experience for learning, composing, and experimenting with music in real-time.</p>
+
+            <h2 class="h2-heading">Core Features and Functionality</h2>
+            <p class="work-paragraph">The main goal of Seraphim AI is to demystify chord progressions and support musicians throughout their creative journey. Here’s what makes the app stand out:</p>
+            <ul>
+                <li class="bullet-points"><strong>Real-Time Chord Recognition</strong>: The app can recognize and display chords as they are played or sung, providing visual feedback in real-time.</li>
+                <li class="bullet-points"><strong>Progression Analysis</strong>: Users can upload audio files or record live, and Seraphim AI will analyze the progression of chords, displaying them in a clear, visual format.</li>
+                <li class="bullet-points"><strong>Alternative Voicings and AI Suggestions</strong>: Seraphim AI suggests alternative chord voicings to enhance or change the mood of the song, giving musicians new ways to interpret their compositions.</li>
+                <li class="bullet-points"><strong>Generative AI Continuation</strong>: Our AI can propose how a song might continue based on its chord progressions, suggesting new ideas that blend seamlessly with existing melodies.</li>
+            </ul>
+
+            <h2 class="h2-heading">How It Works</h2>
+            <p class="work-paragraph">Seraphim AI uses advanced deep learning techniques to provide accurate chord identification and suggestions:</p>
+            <p class="work-paragraph"><strong>Deep Learning for Chord Recognition</strong>: The app employs Convolutional Neural Networks (CNNs) to process audio input and transform it into chord information. By analyzing features such as harmonic frequencies and spectral patterns, the app achieves accurate chord detection, even for complex harmonies.</p>
+            <p class="work-paragraph"><strong>Conditional Random Fields for Progression Mapping</strong>: The use of Conditional Random Fields (CRFs) helps in accurately modeling chord progressions, capturing the contextual relationship between different chords in a song. This ensures that the app not only identifies individual chords but also understands their role in the overall musical structure.</p>
+            <p class="work-paragraph"><strong>AI-Powered Generative Suggestions</strong>: Leveraging AI capabilities, the app can generate new chord progressions that complement the user's input, providing fresh ideas that align with the musical style of the piece. This feature is ideal for artists seeking inspiration for their compositions.</p>
+
+            <h2 class="h2-heading">Vision and Future Goals</h2>
+            <p class="work-paragraph">Our vision for Seraphim AI is to revolutionize the way musicians create and experiment with chords and harmonies. By providing powerful tools for real-time analysis and AI-driven suggestions, we aim to become a must-have app for every musician looking to deepen their understanding of music theory or to simply have fun with chord exploration.</p>
+            <p class="work-paragraph">Future development goals include:</p>
+            <ul>
+                <li class="bullet-points">Integrating music theory lessons directly into the app to help users learn while they create.</li>
+                <li class="bullet-points">Expanding AI-generated suggestions to include full melodies and song structures based on input chords.</li>
+                <li class="bullet-points">Improving the app's user interface for an even more intuitive and visually appealing experience.</li>
+            </ul>
+
+            <h2 class="h2-heading">Join the Seraphim AI Journey</h2>
+            <p class="work-paragraph">Whether you are an aspiring artist or a professional musician, Seraphim AI is designed to enhance your creative process. We are constantly improving and adding new features, and we welcome feedback from our users to make the app even better. Stay tuned for more updates as we continue to build the future of chord recognition and music composition.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navigation and Scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>
