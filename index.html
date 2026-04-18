@@ -1,305 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Home</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0b0b10" />
+<title>James Huang — Seraphim Labs</title>
+<meta name="description" content="James Huang. Building FormLab AI at Seraphim Labs — computer vision and applied ML for human performance." />
+<meta property="og:title" content="James Huang — Seraphim Labs" />
+<meta property="og:description" content="Building FormLab AI. Computer vision and applied ML for the limits of human performance." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://itsjameshuang.live/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="mobile-navigation">
-        <nav class="navbar">
-            <a href="index.html">
-                <div class="header-left">
-                    <h1 class="logo-text">James Huang</h1>
-                    <p class="job-tagline">RA | Musician | CS + CS @ UPennr</p>
-                </div>
-            </a>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul class="nav-links">
-                <li class="mobile-menu-item"><a href="about.html">About</a></li>
-                <li class="mobile-menu-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="mobile-menu-item"><a href="https://github.com/jameshu88/">GitHub</a></li>
-                <li class="mobile-menu-item"><a href="#contact">Say hi! 👋</a></li>
-            </ul>
-        </nav>
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="James Huang — home">
+      <span class="nav__mark" aria-hidden="true"></span>
+      <span class="nav__name">James Huang</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#building">Building</a>
+      <a href="#proof">Proof</a>
+      <a href="#research">Research</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+      <div class="hero__grain"></div>
     </div>
 
+    <div class="container hero__inner">
+      <p class="eyebrow reveal">
+        <span class="eyebrow__dot" aria-hidden="true"></span>
+        Seraphim Labs · Building in stealth
+      </p>
+      <h1 id="hero-title" class="hero__title reveal" style="--delay:60ms">
+        Software for the<br />
+        <em>limits of human performance.</em>
+      </h1>
+      <p class="hero__sub reveal" style="--delay:140ms">
+        Computer vision and applied ML for movement, form, and feedback.
+        Currently building <span class="nowrap">FormLab AI</span> at Seraphim Labs.
+      </p>
+      <div class="hero__actions reveal" style="--delay:220ms">
+        <a class="btn btn--primary" href="#building">Read the thesis</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="hero__meta reveal" style="--delay:320ms" aria-label="Quick facts">
+        <li><span class="hero__meta-k">Now</span><span class="hero__meta-v">FormLab AI</span></li>
+        <li><span class="hero__meta-k">Proof</span><span class="hero__meta-v">Kaggle Silver</span></li>
+        <li><span class="hero__meta-k">Research</span><span class="hero__meta-v">UPenn · CML</span></li>
+        <li><span class="hero__meta-k">Based</span><span class="hero__meta-v">Philadelphia</span></li>
+      </ul>
+    </div>
 
-<!-------------Navigation Bar Starts----------->
-<nav id="navbar" class="header-container" >
-    <div class="menu-wraper">
-        <a href="index.html">
-            <div class="header-left">
-                <h1 class="logo-text">James Huang</h1>
-                <p class="job-tagline">RA | Musician | CS + CS @ UPenn</p>
+    <a href="#building" class="hero__scroll" aria-label="Scroll to next section">
+      <span></span>
+    </a>
+  </section>
+
+  <section id="building" class="section section--feature">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Currently building</span>
+        <h2 class="section__title">FormLab&nbsp;AI.</h2>
+        <p class="section__lede">
+          A vision system that watches how you move and tells you what to fix.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature__copy reveal" style="--delay:80ms">
+          <p>
+            We're building the feedback loop that's been missing from physical practice:
+            millisecond-accurate pose analysis, biomechanical reasoning, and coaching that
+            adapts to the individual instead of the average.
+          </p>
+          <p>
+            The hard parts are real-time inference on consumer hardware, modeling form as a
+            structured signal rather than a classification, and earning trust from athletes
+            and clinicians. Treating the body the way modern tooling treats code &mdash;
+            instrumented, diff-able, improvable.
+          </p>
+          <ul class="pillars">
+            <li>
+              <span class="pillars__k">01</span>
+              <h3>Real-time perception</h3>
+              <p>Pose and motion estimation tuned for sub-frame stability on commodity cameras.</p>
+            </li>
+            <li>
+              <span class="pillars__k">02</span>
+              <h3>Structured form</h3>
+              <p>Biomechanics-aware models that reason over joints and trajectories, not just labels.</p>
+            </li>
+            <li>
+              <span class="pillars__k">03</span>
+              <h3>Adaptive coaching</h3>
+              <p>Feedback that learns the individual &mdash; their range, their constraints, their goal.</p>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="feature__panel reveal" style="--delay:160ms" aria-label="FormLab status">
+          <div class="panel">
+            <div class="panel__row">
+              <span class="panel__k">Project</span>
+              <span class="panel__v">FormLab AI</span>
             </div>
-        </a>
-
-        <div class="header-right">
-            <div class="menu-container">
-                <ul class="menu-items">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="https://github.com/jameshu88/">GitHub</a></li>
-                    <li><a href="#contact">Say hi! 👋</a></li>
-                </ul>
+            <div class="panel__row">
+              <span class="panel__k">Company</span>
+              <span class="panel__v">Seraphim Labs</span>
             </div>
-        </div>
-
-    </div>
-</nav>
-<!-------------Navigation Bar Ends----------->
-
-
-
-
-
-<!----------Hero Section Starts------>
-<div class="hero-section-conntainer">
-    <div class="hero-wraper">
-        <div class="left-hero">
-            <h1 class="hero-title animated-title">Ex-Meta, Brain Enthusiast, ML Nerd, Hacker + Musician</h1>
-            <p class="hero-para animated-para">Fourth-year University of Pennsylvania student in Cognitive + Computer Science, minor in Jazz & Pop Music. Focus: SWE & AI in neuroscience, digital media, and cybersecurity. Kaggle Silver Medalist and Research Engineer at the Computational Memory Lab @ UPenn.</p>
-            <div class="social-wraper-container">
-                <ul class="social-wraper fadeInUp-animation">
-                    <div class="social-menu-items-1"><a href="https://medium.com/@jamesjinghuang/">Medium</a></div>
-                    <div class="social-menu-items"><a href="https://www.linkedin.com/in/jameshuang333/">Linkedin</a></div>
-                    <div class="social-menu-items"><a href="https://x.com/itsfromicarus/">Twitter</a></div>
-                    <div class="social-menu-items-2"><a href="https://www.instagram.com/itsfromicarus/">Instagram</a></div>
-                </ul>
+            <div class="panel__row">
+              <span class="panel__k">Stack</span>
+              <span class="panel__v">CV · ML · Real-time</span>
             </div>
-        </div>
-        <div class="right-hero">
-            <img src="Images/hi.jpg" alt="" class="hero-image fadeInUp-animation">
-        </div>
-    </div>
-</div>
-<!----------Hero Section Ends------>
-
-
-
-<!---------Text Section Starts ------------>
-
-<div class="text-section">
-    <div class="text-section-wraper">
-        <h1 id="portfolio" class="below-hero-title">Some past projects!</h1>
-        <p class="below-hero-para">Neuro Research, RF hacks, Things in between...</p>
-    </div>
-</div>
-<!---------Text Section Ends ------------>
-
-<!-------Works Cards Section Starts-------->
-
-
-<div class="cards-container">
-    <div class="cards-wraper">
-        <div class="card-1-container cards"><a href="a1100k.html">
-            <h1 class="card-title">a1100k</h1>
-            <span class="card-category">Project</span>
-            <p class="card-description">Frequency Capturer and De-Brujin Sequence Generator For Brute-Force/Replay Attacks.</p>
-            <span class="date">Nov 4, 2024</span>
-            <img src="" alt="" class="card-image"></a>
-        </div>
-        <div class="card-2-container cards"><a href="seraphim_ai.html">
-            <h1 class="card-title">Seraphim AI</h1>
-            <span class="card-category">Project + Startup</span>
-            <p class="card-description">Your next songwriting, auto-transcribing, genre-bending AI music companion.</p>
-            <span class="date">Nov 4, 2024</span>
-            <img src="" alt="" class="card-image"></a>
-        </div>
-    </div>
-    <div class="cards-wraper">
-        <div class="card-3-container cards"><a href="automated_annotation.html">
-            <h1 class="card-title">Automated Annotation Framework for Continuous Data</h1>
-            <span class="card-category">Research</span>
-            <p class="card-description">Developing a system to automatically annotate continuous data streams, such as EEG, with LLMs.</p>
-            <img src="" alt="" class="card-image"></a>
-        </div>
-        <div class="card-4-container cards"><a href="purm.html">
-            <h1 class="card-title">Music, Language, and Cognition for PURM</h1>
-            <span class="card-category">Research</span>
-            <p class="card-description">Probing into the neurolinguistic markers of music acquistion in children for Penn's Phonetics Lab.</p>
-            <img src="" alt="" class="card-image"></a>
-        </div>
-    </div>
-    
-
-</div>
-
-<!-------Works Cards Section Ends-------->
-
-
-<!----------Two Flex other links Starts--------->
-
-
-<div class="two-flex-container">
-    <div class="two-flex-wraper">
-        <a href="https://medium.com/@jamesjinghuang/the-vigen%C3%A8re-cipher-from-unbreakable-enigma-to-cryptographic-relic-215761d30af8/"><div class="other-link-1 animate">
-            <img src="Images/article previews/vig3n3r3.png" class="two-image" alt="">
-            <div class="two-content animate">
-                <div class="text-content  ">
-                    <h1 class="other-link-title fadeInUp-animation ">The Vigenère Cipher: From Unbreakable Enigma to Cryptographic Relic</h1>
-                    <p class="other-link-para fadeInUp-animation">Revisiting Cryptanalysis from the Ground Up</p>
-                    <span class="date-time-two-flex fadeInUp-animation">Published on Oct 28, 2024 · 9 min read · In Bootcamp</span>
-                </div>
-                <div class="text-content-icon">
-                    <span><img class="icon fadeInUp-animation" src="icons/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                </div>
-             </div>
-            
+            <div class="panel__row">
+              <span class="panel__k">Status</span>
+              <span class="panel__v">
+                <span class="dot dot--live" aria-hidden="true"></span>
+                In active development
+              </span>
             </div>
-        </a>
 
-        <a href="https://www.google.co.in/"><div class="other-link-1 animate">
-            <img src="Images/article previews/provewereprotected.png" class="two-image" alt="">
-            <div class="two-content animate">
-                <div class="text-content ">
-                    <h1 class="other-link-title fadeInUp-animation ">Prove We’re Protected: A Critical Frontier in Machine Learning</h1>
-                    <p class="other-link-para fadeInUp-animation">Introduction to Privacy-Preserving Machine Learning</p>
-                    <span class="date-time-two-flex fadeInUp-animation">Published on Sept 15, 2024 · 6 min read · In Bootcamp</span>
-                </div>
-                <div class="text-content-icon">
-                    <span><img class="icon fadeInUp-animation" src="icons/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
-                </div>
-             </div>
-            
+            <div class="panel__viz" aria-hidden="true">
+              <svg viewBox="0 0 200 120" class="wave">
+                <defs>
+                  <linearGradient id="wg" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#9aa6ff" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#9aa6ff" stop-opacity=".9" />
+                    <stop offset="100%" stop-color="#9aa6ff" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <g stroke="url(#wg)" fill="none" stroke-width="1">
+                  <path d="M0 60 Q 25 20 50 60 T 100 60 T 150 60 T 200 60" />
+                  <path d="M0 60 Q 25 90 50 60 T 100 60 T 150 60 T 200 60" opacity=".5" />
+                </g>
+                <g fill="#9aa6ff">
+                  <circle cx="40" cy="42" r="2" />
+                  <circle cx="80" cy="68" r="2" />
+                  <circle cx="120" cy="48" r="2" />
+                  <circle cx="160" cy="64" r="2" />
+                </g>
+              </svg>
+              <p class="panel__caption">Pose signal · live inference</p>
             </div>
-        </a>
-
+          </div>
+        </aside>
+      </div>
     </div>
-</div>
-<!----------Two Flex other links Ends--------->
+  </section>
 
-
-
-<!----------Image Banner Starts--------->
-
-
-<div class="image-banner-section-container">
-    <div class="image-banner-wraper">
-        <div class="top-text">
-            <h1 class="banner-title">Previously SWE + RA @ UPenn's Human Memory Lab</h1>
-            <p class="banner-para"> Python/C#/C++, primary research with WhisperX + EEG Analysis, drinking coffee ☕ </p>
+  <section id="proof" class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Technical proof</span>
+          <h2 class="section__title">Kaggle Silver Medal.</h2>
         </div>
-        <div class="image-banner">
-            <img src="Images/CMLLogo.png" alt="" class="banner-image">
+        <div class="two-col__body reveal" style="--delay:80ms">
+          <p class="lede">
+            Top-percentile finish in an open machine learning competition against a global
+            field of researchers and practitioners.
+          </p>
+          <p>
+            Won by getting the modeling, validation, and engineering details right
+            &mdash; not by scale. The kind of result that comes from caring about the
+            tenth decimal place and the shape of the data, not just the headline metric.
+          </p>
+          <dl class="stat">
+            <div>
+              <dt>Result</dt><dd>Silver Medal</dd>
+            </div>
+            <div>
+              <dt>Field</dt><dd>Global, open competition</dd>
+            </div>
+            <div>
+              <dt>Discipline</dt><dd>Applied ML &amp; modeling</dd>
+            </div>
+          </dl>
         </div>
+      </div>
     </div>
-</div>
+  </section>
 
-
-<!----------Image Banner Ends--------->
-
-
-
-<!----------Contact Starts--------->
-
-<div class="contact-container" id="contact">
-    <div class="contact-wraper">
-        <div class="text-contact">
-            <h1 class="contact-title">Say hi!</h1>
-            <p class="contact-para">I don't bite, unless you're a Philly cheesesteak.</p>
+  <section id="research" class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Research</span>
+          <h2 class="section__title">Computational&nbsp;Memory Lab, UPenn.</h2>
         </div>
-        <div class="contact-icons">
-            <div class="social-icon"><a href="https://www.linkedin.com/in/jameshuang333/"><img src="icons/linkedin (3).png" alt=""></a></div>
-            <div class="social-icon"><a href="https://www.instagram.com/itsfromicarus/"><img src="icons/instagram (3).png" alt=""></a></div>
-            <div class="social-icon"><a href="https://x.com/itsfromicarus/"><img src="icons/twitter.png" alt=""></a></div>
+        <div class="two-col__body reveal" style="--delay:80ms">
+          <p class="lede">
+            Applied ML and systems work under Dr.&nbsp;Michael&nbsp;J.&nbsp;Kahana.
+          </p>
+          <p>
+            Built an automated annotation framework for continuous EEG and speech,
+            pushing onset detection toward sub-millisecond precision with WhisperX and
+            adaptive thresholding. Engineered closed-loop Unity experiments that deliver
+            stimuli at EEG-predicted moments of high memory encoding.
+          </p>
+          <p class="muted">
+            Real research code, real subjects, real timing budgets.
+          </p>
+          <ul class="tags" aria-label="Areas">
+            <li>EEG</li>
+            <li>WhisperX</li>
+            <li>Closed-loop systems</li>
+            <li>Unity / C#</li>
+            <li>Signal processing</li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
+  </section>
 
-<script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-100px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-</script>
+  <section id="thesis" class="section section--thesis">
+    <div class="container container--narrow">
+      <div class="thesis reveal">
+        <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Thesis</span>
+        <p class="thesis__body">
+          The interesting problems left are the ones where models meet the physical world
+          and have to be right. I build at that boundary &mdash; <em>vision, signal,
+          feedback</em> &mdash; and I ship.
+        </p>
+        <p class="thesis__sign">— James</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="contact" class="section section--contact">
+    <div class="container container--narrow">
+      <div class="contact reveal">
+        <h2 class="contact__title">Let's talk.</h2>
+        <p class="contact__sub">
+          Open to investors, technical collaborators, and operators who care about this
+          problem space.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:jamesjinghuang@gmail.com">jamesjinghuang@gmail.com</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/jameshuang333/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="https://github.com/jameshu88/" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-------------Cards Scroll Starts-------->
-<script>
-    // JavaScript to increase scroll speed on the right card
-    const fastScrollCard = document.getElementById('fastScrollCard');
-  
-    fastScrollCard.addEventListener('wheel', (event) => {
-      event.preventDefault();
-      fastScrollCard.scrollTop += event.deltaY * 1.5; // Increase multiplier to scroll faster
-    });
-  </script>
-<!-------------Cards Scroll Ends-------->
+</main>
 
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="nav__mark" aria-hidden="true"></span>
+      <span>James Huang</span>
+    </div>
+    <p class="footer__meta">Seraphim Labs · Philadelphia · <span id="year">2026</span></p>
+  </div>
+</footer>
 
-<script>
-    function toggleMenu() {
-const navLinks = document.querySelector('.nav-links');
-navLinks.classList.toggle('active');
-}
-</script>
-
-
-<!-------Mobile Navigation----->
-    <script>
-        let lastScrollY = window.scrollY;
-
-    window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-
-    if (window.scrollY > lastScrollY) {
-        navbar.classList.add('hidden'); // Hide navbar on scroll down
-    } else {
-        navbar.classList.remove('hidden'); // Show navbar on scroll up
-    }
-
-    lastScrollY = window.scrollY;
-    });
-    </script>
-<!-------Mobile Navigation----->
-
-<!---------Fade in up animation-------->
-<script>
-
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-// Use Intersection Observer to determine if objects are within the viewport
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-      return;
-    }
-    entry.target.classList.remove('in-view');
-  });
-});
-
-// Get all the elements with the .animate class applied
-const allAnimatedElements = document.querySelectorAll('.animate');
-
-// Add the observer to each of those elements
-allAnimatedElements.forEach((element) => observer.observe(element));
-
-}); 
-
-</script>
-
-
+<script src="script.js" defer></script>
 </body>
-
 </html>
-
