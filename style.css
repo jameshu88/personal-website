@@ -484,13 +484,22 @@ em { font-style: italic; color: var(--ink); }
 /* two-column section (Kaggle, Research) */
 .two-col {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
   gap: clamp(32px, 6vw, 80px);
   align-items: start;
 }
 @media (max-width: 880px) { .two-col { grid-template-columns: 1fr; } }
-.two-col__copy { position: sticky; top: 100px; }
+.two-col__copy { position: sticky; top: 100px; min-width: 0; }
 @media (max-width: 880px) { .two-col__copy { position: static; } }
+.two-col__copy .section__title {
+  font-size: clamp(30px, 4.2vw, 52px);
+  line-height: 1.05;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  max-width: 14ch;
+}
+.two-col__body { min-width: 0; }
 .two-col__body p { margin: 0 0 16px; color: var(--ink-2); max-width: 60ch; }
 
 .stat {
@@ -535,6 +544,27 @@ em { font-style: italic; color: var(--ink); }
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255,255,255,0.02);
+}
+
+/* external link row (sits under stats / tags) */
+.link-row { margin: 22px 0 0 !important; }
+.ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line-2);
+  transition: color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
+}
+.ext-link:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+  transform: translateY(-1px);
 }
 
 /* thesis */
