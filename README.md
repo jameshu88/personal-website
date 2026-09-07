@@ -1,6 +1,6 @@
 # itsjameshuang.live
 
-Personal site for James Huang. Single-page, dark, editorial. Built as the founder-facing surface for Seraphim Labs / FormLab AI.
+Personal site for James Huang. Single-page, dark, editorial. Built as the founder-facing surface for Seraphim Labs / Brodie.
 
 ## Stack
 Plain HTML, CSS, and a small vanilla-JS reveal/nav script. No build step, no framework, no dependencies. Fonts served from Google Fonts (Fraunces, Inter, JetBrains Mono).
